@@ -3,13 +3,13 @@ html{
 	font-family: sans-serif;
 }
 body{
-width:1024px;
-margin:0 auto;
-background-color: #ff7f50;
-border: 2px dotted black;
-border-radius:15%;	
-z-index:2;
-position: relative;
+	width:1024px;
+	margin:0 auto;
+	background-color: #ff7f50;
+	border: 2px dotted black;
+	border-radius:15%;	
+	z-index:2;
+	position: relative;
 }
 h1{
 	text-align: center;
