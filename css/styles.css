@@ -1,9 +1,9 @@
-html{
+html {
 		background-color: green;
 		font-family: sans-serif;
 }
 
-body{
+body {
 		width:1024px;
 		margin:0 auto;
 		background-color: #ff7f50;
@@ -13,12 +13,12 @@ body{
 		position: relative;
 }
 
-h1{
+h1 {
 		text-align: center;
 	
 }
 
-#glowa{
+#glowa {
 		text-align: center;
 		background-color: aqua;
 		margin-bottom: 8px;
@@ -32,7 +32,7 @@ h1{
 		box-shadow: 5px 5px 5px 6px white;
 }
 
-#gora{
+#gora {
 		text-align: center;
 		background-color: teal;
 		margin-bottom: 8px;
@@ -44,7 +44,7 @@ h1{
 		text-align: justify;
 }
 
-#lewa{
+#lewa {
 		text-align: center;
 		background-color: fuchsia;
 		width: 200px;
@@ -60,7 +60,7 @@ h1{
 		padding-bottom: 6px;
 }
 
-#prawa{
+#prawa {
 		text-align: center;
 		background-color: lime;
 		width: 750px;
@@ -76,7 +76,7 @@ h1{
 		padding-bottom: 6px;
 }
 
-#stopeczka{
+#stopeczka {
 		background-color: ThreedDarkShadow;
 		clear: both;
 		height: 90px;
@@ -91,6 +91,6 @@ h1{
 		box-shadow: 5px 5px 5px 6px white;
 }
 
-h2{
+h2 {
 			text-align:center;
 }
