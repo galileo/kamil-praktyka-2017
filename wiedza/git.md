@@ -5,7 +5,7 @@ git commit – Potwierdzenie zmian które znajdują się w fazie przechowalni (s
 zmiany które zostały naniesione na kod a nie zostały dodane do tej fazy nie zostaną potwierdzone. -m (message) dla ułatwienia.
 git status (git st) – Sprawdzanie plików/czy coś zostało zmodyfikowane etc. 
 git init - Inicjalizuje repozytorium git w danym katalogu.
-git add – Dodanie pliku do lokalnego repozytorium.
+git add – Dodanie zmian do przechowalni.
 git push – Wysyłanie do konkretnego brancha do brancha 
 git pull – Robi to co fetch i merge naraz 
 git rm - rm usuwa śledzone
