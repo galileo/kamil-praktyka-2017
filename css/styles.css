@@ -61,15 +61,12 @@ h1 {
 }
 
 #stopeczka {
+		text-align: center;
 		background-color: #CCCCCC;
 		clear: both;
-		height: 90px;
 		margin-left: 5px;
 		margin-right: 5px;
-		padding-left: 5px;
-		padding-right: 5px;
-		padding-top: 6px;
-		padding-bottom: 6px;
+		padding: 20px 0px 10px 0px;
 }
 
 h2 {
