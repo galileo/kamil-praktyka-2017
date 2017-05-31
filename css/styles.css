@@ -133,10 +133,6 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
-div {
-	border: 1px solid blue;
-}
-
 ul.breadcrumb li+li:before {
     padding: 8px;
     color: black;
