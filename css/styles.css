@@ -5,7 +5,7 @@ html {
 body {
     position: relative;
     width: 1024px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .page {
@@ -96,7 +96,7 @@ h2 {
 
 ul.breadcrumb {
     padding: 10px 16px;
-    list-style: none;
+ list-style: none;
     font-size: 17px;
 }
 
