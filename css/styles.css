@@ -3,7 +3,7 @@ html {
 }
 
 body {
-		position: fixed;
+		position: relative;
 		width:1024px;
 		margin:0 auto;
 		position: relative;
@@ -49,13 +49,15 @@ h1 {
 		text-align: center;
 		width: 750px;
 		float: right;
-		height: 500px;
 		margin-left: 5px;
 		margin-right: 5px;
 		padding-left: 5px;
 		padding-right: 5px;
 		padding-top: 6px;
 		padding-bottom: 6px;
+}
+.clear {
+	clear: both;
 }
 
 #stopeczka {
@@ -102,11 +104,7 @@ p {
 	list-style: none;
 }
 
-.green-border{
-		border: 1px solid green;
-} 
-
-a {
+.menu a {
 	border: 1px solid #DDDDDD;
 	background: #F1F1F1;
 	display: block;
@@ -115,7 +113,32 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+.menu a:hover {
 	background: #CCC;
 	color: white;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    font-size: 17px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+div {
+	border: 1px solid blue;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
 }
