@@ -1,40 +1,40 @@
 html {
-		font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 body {
-		position: relative;
-		width:1024px;
-		margin:0 auto;
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
 }
 
 .page {
-		background: #F1F1F1;
+    background: #F1F1F1;
 }
 
 h1 {
-		text-align: center;
+    text-align: center;
 }
 
 h2 {
-		text-align:center;
+    text-align: center;
 }
 
 .glowa {
-		text-align: center;
-		background-image: url('../img/obraz.jpg');
-		padding: 6px 10px 6px 10px;
+    text-align: center;
+    background-image: url('../img/obraz.jpg');
+    padding: 6px 10px 6px 10px;
 }
 
 .gora {
-		text-align: center;
-		margin: 10px 0px 8px;
-		padding: 10px 5px 10px 20px;
-		text-align: justify;
+    text-align: center;
+    margin: 10px 0px 8px;
+    padding: 10px 5px 10px 20px;
+    text-align: justify;
 }
 
 .content {
-		padding: 10px;
+    padding: 10px;
 }
 
 .content .menu ul {
@@ -42,58 +42,56 @@ h2 {
     padding: 0;
 }
 
-.content .menu ul>li{
-		list-style: none;
+.content .menu ul>li {
+    list-style: none;
 }
 
 .content .menu a {
-		border: 1px solid #DDDDDD;
-		background: #F1F1F1;
-		display: block;
-		color: #CCC;
-		padding: 8px 0 8px 8px;
-		text-decoration: none;
+    border: 1px solid #DDDDDD;
+    background: #F1F1F1;
+    display: block;
+    color: #CCC;
+    padding: 8px 0 8px 8px;
+    text-decoration: none;
 }
 
 .content .menu a:hover {
-		background: #CCC;
-		color: white;
-
+    background: #CCC;
+    color: white;
 }
 
 .lewa {
-		text-align: center;
-		width: 200px;
-		float: left;
-		margin: 0px 5px 0px 5px;
-		padding: 6px 5px 6px 5px;
+    text-align: center;
+    width: 200px;
+    float: left;
+    margin: 0px 5px 0px 5px;
+    padding: 6px 5px 6px 5px;
 }
 
 .menu {
-		background-color: #cccccc;
-		text-align:center;
-		font-size: 20px;
+    background-color: #cccccc;
+    text-align: center;
+    font-size: 20px;
 }
 
-
 .prawa {
-		text-align: center;
-		width: 750px;
-		float: right;
-		margin: 0px 5px 0px 5px;
-		padding: 6px 5px 6px 5px;
+    text-align: center;
+    width: 750px;
+    float: right;
+    margin: 0px 5px 0px 5px;
+    padding: 6px 5px 6px 5px;
 }
 
 .clear {
-		clear: both;
+    clear: both;
 }
 
 .stopeczka {
-		text-align: center;
-		background-color: #f9f9f9;
-		clear: both;
-		margin: 0px 5px 0px 5px;
-		padding: 20px 0px 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    clear: both;
+    margin: 0px 5px 0px 5px;
+    padding: 20px 0px 10px;
 }
 
 ul.breadcrumb {
