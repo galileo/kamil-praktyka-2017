@@ -9,11 +9,19 @@ body {
 		position: relative;
 }
 
+.page {
+	background: #F1F1F1;
+}
+
 h1 {
 		text-align: center;
 }
 
-#glowa {
+h2 {
+		text-align:center;
+}
+
+.glowa {
 		text-align: center;
 		background-image: url('../img/obraz.jpg');
 		padding-left: 10px;
@@ -22,7 +30,7 @@ h1 {
 		padding-bottom: 6px;
 }
 
-#gora {
+.gora {
 		text-align: center;
 		margin-bottom: 8px;
 		margin-top: 10px;
@@ -31,61 +39,6 @@ h1 {
 		padding-top: 6px;
 		padding-bottom: 6px;
 		text-align: justify;
-}
-
-#lewa {
-		text-align: center;
-		width: 200px;
-		float: left;
-		margin-left: 5px;
-		margin-right: 5px;
-		padding-left: 5px;
-		padding-right: 5px;
-		padding-top: 6px;
-		padding-bottom: 6px;
-}
-
-#prawa {
-		text-align: center;
-		width: 750px;
-		float: right;
-		margin-left: 5px;
-		margin-right: 5px;
-		padding-left: 5px;
-		padding-right: 5px;
-		padding-top: 6px;
-		padding-bottom: 6px;
-}
-.clear {
-	clear: both;
-}
-
-#stopeczka {
-		text-align: center;
-		background-color: #EEEEEE;
-		clear: both;
-		margin-left: 5px;
-		margin-right: 5px;
-		padding: 20px 0px 10px;
-}
-
-h2 {
-		text-align:center;
-}
-
-p {
-		text-align:center;
-		text-shadow:2px 2px 2px black;
-}
-
-.menu {
-		background-color: #cccccc;
-		text-align:center;
-		font-size: 20px;
-}
-
-.page {
-	background: #F1F1F1;
 }
 
 .content {
@@ -101,7 +54,7 @@ p {
 	list-style: none;
 }
 
-.menu a {
+.content .menu a {
 	border: 1px solid #DDDDDD;
 	background: #F1F1F1;
 	display: block;
@@ -110,9 +63,53 @@ p {
 	text-decoration: none;
 }
 
-.menu a:hover {
+.content .menu a:hover {
 	background: #CCC;
 	color: white;
+}
+
+.lewa {
+		text-align: center;
+		width: 200px;
+		float: left;
+		margin-left: 5px;
+		margin-right: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+}
+
+.menu {
+		background-color: #cccccc;
+		text-align:center;
+		font-size: 20px;
+}
+
+
+.prawa {
+		text-align: center;
+		width: 750px;
+		float: right;
+		margin-left: 5px;
+		margin-right: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+}
+
+.clear {
+	clear: both;
+}
+
+.stopeczka {
+		text-align: center;
+		background-color: #f9f9f9;
+		clear: both;
+		margin-left: 5px;
+		margin-right: 5px;
+		padding: 20px 0px 10px;
 }
 
 ul.breadcrumb {
