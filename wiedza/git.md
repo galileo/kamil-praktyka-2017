@@ -52,12 +52,10 @@ sie przełączać, jest to git checkout master i git checkout -b newbranch w jed
 **git diff** - Mozemy zobaczyć zmiany z poza poczealni.
 
 
-
 Jak zrobic brancha i kiedy stworzyć PR?
 ===
 
-
-Git checkout -b newbranch - (jest to stworzenie nowej gałęzi)
+Git checkout -b newbranch* - (jest to stworzenie nowej gałęzi)
 
 Po dokonanych zmianach w plikach, dodajemy je poleceniem git add.
 
@@ -68,8 +66,7 @@ Wpisujemy git push, jeżeli wyskakuje fatal: The current branch issue-2-uporzadk
 To push the current branch and set the remote as upstream, use
 git push --set-upstream origin nazwatwojegobrancha
 
-PAMIETAC, ŻE -u to to samo co --set-upstream, reszta do przepisania, czyli powinno wygladac tak: git push -u origin issue-2-uporzadkowanie-kodu Po tym możemy już tworzyć PR(pull request) na githubie.
-
++PAMIETAC, ŻE -u to to samo co --set-upstream, reszta do przepisania, czyli powinno wygladac tak: git push -u origin issue-2-uporzadkowanie-kodu Po tym możemy już tworzyć PR(pull request) na githubie.
 
 Różnica pomiędzy fetch i merge a pull
 ===
@@ -84,4 +81,3 @@ Fetch i Merge
 
 Wchodzimy na brancha, którego chcemy zmergować, i wpisujemy git fetch(komenda ta pobiera dane ze zdalnego projektu)
 Przełączamy się na brancha 'głównego' w moim przypadku 'master' i wpisujemy git merge(czyli nakładamy zmiany na obecnie wybrany branch)
-
