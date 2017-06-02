@@ -6,7 +6,5 @@ if ($swiatla === 'zielone') {
 } else if ($swiatla === 'zolte') {
     echo 'Zolte swiatlo, proszę zwolnic';
 } else {
-  echo 'Czerwone swiatlo, prosze się zatrzymać';
+    echo 'Czerwone swiatlo, prosze się zatrzymać';
 }
-
-
