@@ -26,5 +26,5 @@ class Swiatlo
     }
 }
 $swiatla = 'blekitne';
-$swiatlo = new swiatlo(); // Przypisanie wartosci zmiennej $swiatlo
+$swiatlo = new Swiatlo(); // Przypisanie wartosci zmiennej $swiatlo
 $swiatlo->info($swiatla); // Wywołanie funkcji info
