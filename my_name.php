@@ -1,7 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', true); // Errory w na stronie wskazują na daną linie i "opisują" problem
-
 class Swiatlo 
 {
     public function info($swiatla) // Funkcja info
@@ -25,6 +22,7 @@ class Swiatlo
         }
     }
 }
+
 $swiatla = 'blekitne';
 $swiatlo = new Swiatlo(); // Przypisanie wartosci zmiennej $swiatlo
 $swiatlo->info($swiatla); // Wywołanie funkcji info

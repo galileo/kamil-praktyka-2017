@@ -4,7 +4,7 @@ class Swiatla {
     protected $swiatlo = 'zielone';
 
     function __construct($swiatlo = 'zielone') {
-      $this->swiatlo= $swiatlo;
+      $this->swiatlo = $swiatlo;
     }
     public function info()
     {
