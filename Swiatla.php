@@ -1,5 +1,4 @@
 <?php
-
 class Swiatla {
     protected $swiatlo = 'zielone';
 
