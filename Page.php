@@ -6,13 +6,13 @@ class Page
     
     function __construct($title, $content)
     {
-        $this->title = $title;
+        $this->title   = $title;
         $this->content = $content;
     }
     public function getTitle()
     {
-            $this->title;
-            return $this->title;
+        $this->title;
+        return $this->title;
     }
     public function setTitle()
     {
