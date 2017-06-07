@@ -10,12 +10,22 @@ class Page
     }
     public function getTitle()
     {
-        if ($this->title) {
-            echo "$this->title";
-        }
+            $this->title;
     }
     public function setTitle()
     {
         return $this->title;
+    }
+    function __construct($content)
+    {
+        $this->content = $content;
+    }
+    public function getContent()
+    {
+        $this->conent;
+    }
+    public function setContent()
+    {
+        return $this->content;
     }
 }
