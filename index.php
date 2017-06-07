@@ -1,6 +1,6 @@
 <?php
+include "plik.php";
+$page = new Page('Mój tytuł zdefiniowany w klasie', 'Treść');
 
-$page = new Page('Tytuł:', 'Treść strony:');
-
-echo $page->getContent();
-echo $page->getTitle();s
+echo 'Treść strony:' . $page->getContent() . '<br>';
+echo 'Tytuł strony:' . $page->getTitle();

@@ -4,25 +4,24 @@ class Page
     private $title;
     private $content;
     
-    function __construct($title)
+    function __construct($title, $content)
     {
         $this->title = $title;
+        $this->content = $content;
     }
     public function getTitle()
     {
             $this->title;
+            return $this->title;
     }
     public function setTitle()
     {
         return $this->title;
     }
-    function __construct($content)
-    {
-        $this->content = $content;
-    }
     public function getContent()
     {
-        $this->conent;
+        $this->content;
+        return $this->content;
     }
     public function setContent()
     {
