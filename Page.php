@@ -11,7 +11,6 @@ class Page
     }
     public function getTitle()
     {
-        $this->title;
         return $this->title;
     }
     public function setTitle($title)
@@ -20,7 +19,6 @@ class Page
     }
     public function getContent()
     {
-        $this->content;
         return $this->content;
     }
     public function setContent($value)
