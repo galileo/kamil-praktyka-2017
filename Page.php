@@ -14,17 +14,17 @@ class Page
         $this->title;
         return $this->title;
     }
-    public function setTitle($Onas)
+    public function setTitle($title)
     {
-        $this->title = $Onas;
+        $this->title = $title;
     }
     public function getContent()
     {
         $this->content;
         return $this->content;
     }
-    public function setContent($TrescOnas)
+    public function setContent($value)
     {
-        $this->content = $TrescOnas;
+        $this->content = $value;
     }
 }
