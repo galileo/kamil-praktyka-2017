@@ -1,5 +1,5 @@
 <?php
-class Strona
+class Page
 {
     private $title;
     private $content;
