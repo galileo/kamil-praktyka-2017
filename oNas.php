@@ -42,7 +42,7 @@
 </html>
 <?php
 include "Strona.php";
-$strona = new Strona('Mój tytuł zdefiniowany w klasie', 'Treść', '/');
+$strona = new Page('Mój tytuł zdefiniowany w klasie', 'Treść', '/');
 
 echo 'Treść strony: ' . $strona->getContent() . '<br>';
 echo 'Tytuł strony: ' . $strona->getTitle() . '<br>';
