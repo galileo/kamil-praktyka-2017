@@ -1,7 +1,13 @@
+<?php
+include "Page.php";
+$page = new Page('Mój tytuł zdefiniowany w klasie', 'Treść', '/');
+?>
+
 <!DOCTYPE HTML>
 <html>
 
 <head>
+
   <title>praktyka1</title>
   <meta charset="utf-8">
   <meta name="keywords" content="slowa kluczowe" />
@@ -40,20 +46,3 @@
 </body>
 
 </html>
-
-<?php
-include "Page.php";
-$strona = new Page('Mój tytuł zdefiniowany w klasie', 'Treść', '/');
-
-echo 'Treść strony: ' . $strona->getContent() . '<br>';
-echo 'Tytuł strony: ' . $strona->getTitle() . '<br>';
-echo 'Adres url: ' . $strona->getUrl() . '<br>';
-
-$strona->setContent('Witamy na stronie głównej');
-$strona->setTitle('Strona główna');
-$strona->setUrl('/o-nas');
-
-echo 'Treść strony: ' . $strona->getContent() . '<br>';
-echo 'Tytuł strony: ' . $strona->getTitle() . '<br>';
-echo 'Adres url: ' . $strona->getUrl() . '<br>';
-?>
