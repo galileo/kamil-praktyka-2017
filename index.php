@@ -1,6 +1,8 @@
 <?php
-include "Page.php";
-$page = new Page('Tytuł Strony', 'Treść', '/');
+include "pages.php";
+
+$page = $pages['index'];
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -34,12 +36,8 @@ $page = new Page('Tytuł Strony', 'Treść', '/');
       </div>
     </div>
     <div class="prawa">
-      <h1><?php
-echo $page->getTitle();
-      ?></h1>
-      <p><?php
-echo $page->getContent();
-      ?></p>
+      <h1><?php echo $page->getTitle() ?></h1>
+      <p><?php echo $page->getContent() ?></p>
     </div>
    <div class="clear" />
   </div>
