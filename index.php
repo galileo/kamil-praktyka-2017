@@ -37,7 +37,7 @@ $page = $pages['index'];
     </div>
     <div class="prawa">
       <h1><?php echo $page->getTitle() ?></h1>
-      <p><?php echo $page->getContent() ?></p>
+      <p><?= echo $page->getContent() ?></p>
     </div>
    <div class="clear" />
   </div>
