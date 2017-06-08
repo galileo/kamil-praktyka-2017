@@ -1,8 +1,7 @@
 <?php
 include "Page.php";
-$page = new Page('Mój tytuł zdefiniowany w klasie', 'Treść', '/');
+$page = new Page('Tytuł Strony', 'Treść', '/');
 ?>
-
 <!DOCTYPE HTML>
 <html>
 
@@ -35,9 +34,14 @@ $page = new Page('Mój tytuł zdefiniowany w klasie', 'Treść', '/');
       </div>
     </div>
     <div class="prawa">
-      <h1>Witamy na stronie głównej</h1>
+      <h1><?php
+echo $page->getTitle();
+      ?></h1>
+      <p><?php
+echo $page->getContent();
+      ?></p>
     </div>
-    <div class="clear" />
+   <div class="clear" />
   </div>
   </div>
   <div class="stopeczka">

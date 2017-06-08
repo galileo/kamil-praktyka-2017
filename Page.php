@@ -36,4 +36,4 @@ class Page
         $this->url = $Urlvalue;
     }
 }
-?>
+
