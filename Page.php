@@ -4,6 +4,7 @@ class Page
     private $title;
     private $content;
     private $url;
+    private $tablica;
     
     function __construct($title, $content, $url)
     {

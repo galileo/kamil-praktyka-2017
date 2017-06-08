@@ -1,7 +1,13 @@
+<?php
+include "pages.php";
+
+$page = $pages['aboutUs'];
+?>
 <!DOCTYPE HTML>
 <html>
 
 <head>
+
   <title>praktyka1</title>
   <meta charset="utf-8">
   <meta name="keywords" content="slowa kluczowe" />
@@ -16,22 +22,23 @@
   <div class="gora">
     <ul class="breadcrumb">
       <li>Praktyki</li>
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.php">Home</a></li>
     </ul>
   </div>
   <div class="content">
     <div class="lewa">
       <div class="menu">
         <ul>
-          <li><a href="index.html">Strona główna</a></li>
-          <li><a href="onas.html">O nas</a></li>
+          <li><a href="index.php">Strona główna</a></li>
+          <li><a href="AboutUs.php">O nas</a></li>
         </ul>
       </div>
     </div>
     <div class="prawa">
-      <h1>Witamy na stronie głównej</h1>
+      <h1><?php echo $page->getTitle() ?></h1>
+      <p><?= echo $page->getContent() ?></p>
     </div>
-    <div class="clear" />
+   <div class="clear" />
   </div>
   </div>
   <div class="stopeczka">
