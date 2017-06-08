@@ -24,7 +24,7 @@
       <div class="menu">
         <ul>
           <li><a href="index.php">Strona główna</a></li>
-          <li><a href="oNas.php">O nas</a></li>
+          <li><a href="AboutUs.php">O nas</a></li>
         </ul>
       </div>
     </div>
@@ -42,7 +42,7 @@
 </html>
 
 <?php
-include "Strona.php";
+include "Page.php";
 $strona = new Page('Mój tytuł zdefiniowany w klasie', 'Treść', '/');
 
 echo 'Treść strony: ' . $strona->getContent() . '<br>';
