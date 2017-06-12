@@ -20,7 +20,7 @@
     <div class="gora">
       <ul class="breadcrumb">
         <li><a href="index.php">Home</a></li>
-        <li><href="FormularzKontaktowy.php">ContactUs</a></li>
+        <li><href="galeria.php">Galerry</a></li>
       </ul>
     </div>
     <div class="content">
@@ -35,18 +35,12 @@
         </div>
       </div>
       <div class="prawa">
-        <h1><?php echo $page->getTitle() ?></h1>
-        <p><?php echo $page->getContent() ?></p>
-        <form id="contact-form" action="contact" method="post">
-          <strong>Twoja Nazwa</strong> <span>* </span>
-          <input type="text" name="name" /><br>
-          <strong>Twój E-Mail</strong> <span>*</span>
-          <input type="text" name="name" /><br>
-          <strong>Temat</strong>
-          <input type="text" name="name" /><br>
-          <strong>Wiadomość</strong> <span>*</span>
-          <textarea></textarea><br>
-          <button>Wyślij!</button>
+        <a href="Roza.php"><img src="img\Roza.jpg" alt="Róża" height="300" width="300" /></a>
+        <a href="chaber.php"><img src="img\chaber.jpg" alt="chaber" height="300" width="300" /></a>
+        <a href="mak.php"><img src="img\mak.jpg" alt="mak" height="300" width="300" /></a>
+        <a href="stokrotka.php"><img src="img\stokrotka.jpg" alt="stokrotka" height="300" width="300" /></a>
+        <a href="irys.php"><img src="img\irys.jpg" alt="irys" height="300" width="300" /></a>
+        <a href="tulipan.php"><img src="img\tulipan.jpg" alt="tulipan" height="300" width="300" /></a>
         </form>
       </div>
       <div class="clear" />
