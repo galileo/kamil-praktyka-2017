@@ -21,7 +21,7 @@
       <ul class="breadcrumb">
         <li><a href="index.php">Home</a></li>
         <li><a href="galeria.php">Galerry</a></li>
-        <li><href="chaber.php">Chaber</li>
+        <li><href="mak.php">Mak</li>
       </ul>
     </div>
     <div class="content">
@@ -40,12 +40,13 @@
     <h1><?php echo $page->getTitle() ?></h1>
     <p><?php echo $page->getContent() ?></p>
     <div class="galeria">
-      <img src="img\chaber.jpg" alt="Róża" height="500" width="500" />
+      <img src="img\mak.jpg" alt="mak" height="500" width="500" />
       <div class="opisykwiatow">
-        gatunek rośliny zielnej z rodziny astrowatych. Nazwy ludowe: białasy, głowacz, jasieniec, kardy, kwiatek wołoszek, macoszka,
-        modrak, modrzeńczyk, samosiejka, wasilek, wawer. Występuje w Europie oraz na Syberii Zachodniej. W Polsce pospolity chwast<
-        polny, archeofitczasem podaje się nawet dwukrotnie większą liczbę, co wynika z różnego traktowania taksonów. Większość 
-        ozdobnych odmian
+        rodzaj roślin z rodziny makowatych (Papaveraceae Juss.), roślina oleista, rodzimy dla Eurazji, Afryki i Ameryki Północnej.
+        Zalicza się do niego w zależności od ujęcia od ok. 70 do ok. 100 gatunków[3][4]. Niemal wszystkie gatunki występują na<
+        półkuli północnej, w Australii i Afryce południowej rośnie dziko tylko jeden gatunek – Papaver acuelatum. Wiele gatunków<
+        uprawianych jest jako rośliny ozdobne. Mak lekarski (Papaver somniferum) jest surowcem, z którego wytwarzana jest heroina,
+        morfina i opium
       </div>
       <div class="clear" />
       </div>

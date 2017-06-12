@@ -1,7 +1,7 @@
 <?php
   include "pages.php";
   
-  $page = $pages['galeria'];
+  $page = $pages['formularz'];
   
   ?>
 <!DOCTYPE HTML>
@@ -15,37 +15,39 @@
   </head>
   <body>
     <div class="glowa">
-      <h1>nagłówek</h1>
+      <h1>Strona Kwiatowa</h1>
     </div>
     <div class="gora">
       <ul class="breadcrumb">
         <li><a href="index.php">Home</a></li>
-        <li><a href="galeria.php">Galerry</a></li>
-        <li><href="chaber.php">Chaber</li>
+        <li><href="FormularzKontaktowy.php">ContactUs</a></li>
       </ul>
     </div>
     <div class="content">
-    <div class="lewa">
-      <div class="menu">
-        <ul>
+      <div class="lewa">
+        <div class="menu">
+          <ul>
           <li><a href="index.php">Strona główna</a></li>
           <li><a href="AboutUs.php">O nas</a></li>
           <li><a href="galeria.php">Galeria Kwiatów</a></li>
           <li><a href="login.php">Zaloguj się</a></li>
           <li><a href="FormularzKontaktowy.php">Kontakt</a></li>
-        </ul>
+        </div>
       </div>
-    </div>
-    <div class="prawa">
-    <h1><?php echo $page->getTitle() ?></h1>
-    <p><?php echo $page->getContent() ?></p>
-    <div class="galeria">
-      <img src="img\chaber.jpg" alt="Róża" height="500" width="500" />
-      <div class="opisykwiatow">
-        gatunek rośliny zielnej z rodziny astrowatych. Nazwy ludowe: białasy, głowacz, jasieniec, kardy, kwiatek wołoszek, macoszka,
-        modrak, modrzeńczyk, samosiejka, wasilek, wawer. Występuje w Europie oraz na Syberii Zachodniej. W Polsce pospolity chwast<
-        polny, archeofitczasem podaje się nawet dwukrotnie większą liczbę, co wynika z różnego traktowania taksonów. Większość 
-        ozdobnych odmian
+      <div class="prawa">
+        <h1><?php echo $page->getTitle() ?></h1>
+        <p><?php echo $page->getContent() ?></p>
+        <form id="contact-form" action="contact" method="post">
+          <strong>Twoja Nazwa</strong> <span>* </span>
+          <input type="text" name="name" /><br>
+          <strong>Twój E-Mail</strong> <span>*</span>
+          <input type="text" name="name" /><br>
+          <strong>Temat</strong>
+          <input type="text" name="name" /><br>
+          <strong>Wiadomość</strong> <span>*</span>
+          <textarea></textarea><br>
+          <button>Wyślij!</button>
+        </form>
       </div>
       <div class="clear" />
       </div>

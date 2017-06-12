@@ -21,7 +21,7 @@
       <ul class="breadcrumb">
         <li><a href="index.php">Home</a></li>
         <li><a href="galeria.php">Galerry</a></li>
-        <li><href="chaber.php">Chaber</li>
+        <li><href="roza.php">Róża</li>
       </ul>
     </div>
     <div class="content">
@@ -37,15 +37,15 @@
       </div>
     </div>
     <div class="prawa">
-    <h1><?php echo $page->getTitle() ?></h1>
-    <p><?php echo $page->getContent() ?></p>
-    <div class="galeria">
-      <img src="img\chaber.jpg" alt="Róża" height="500" width="500" />
-      <div class="opisykwiatow">
-        gatunek rośliny zielnej z rodziny astrowatych. Nazwy ludowe: białasy, głowacz, jasieniec, kardy, kwiatek wołoszek, macoszka,
-        modrak, modrzeńczyk, samosiejka, wasilek, wawer. Występuje w Europie oraz na Syberii Zachodniej. W Polsce pospolity chwast<
-        polny, archeofitczasem podaje się nawet dwukrotnie większą liczbę, co wynika z różnego traktowania taksonów. Większość 
-        ozdobnych odmian
+      <h1><?php echo $page->getTitle() ?></h1>
+      <p><?php echo $page->getContent() ?></p>
+      <div class="galeria">
+        <img src="img\roza.jpg" alt="Róża" height="500" width="500" />
+        <div class="opisykwiatow">
+          rodzaj krzewów należących do rodziny różowatych (Rosaceae). Znanych jest 150–200 gatunków występujących na półkuli północnej,
+          czasem podaje się nawet dwukrotnie większą liczbę, co wynika z różnego traktowania taksonów. Większość ozdobnych odmian
+          róży rozmnaża się przez okulizację na podkładkach z dzikich róż
+        </div>
       </div>
       <div class="clear" />
       </div>

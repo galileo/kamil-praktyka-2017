@@ -1,7 +1,7 @@
 <?php
   include "pages.php";
   
-  $page = $pages['index'];
+  $page = $pages['login'];
   
   ?>
 <!DOCTYPE HTML>
@@ -19,7 +19,8 @@
     </div>
     <div class="gora">
       <ul class="breadcrumb">
-        <li><href="index.php">Home</li>
+        <li><a href="index.php">Home</a></li>
+        <li><href="login.php">Login</a></li>
       </ul>
     </div>
     <div class="content">
@@ -37,6 +38,18 @@
       <div class="prawa">
         <h1><?php echo $page->getTitle() ?></h1>
         <p><?php echo $page->getContent() ?></p>
+        <div id="panel">
+          <form>
+            <label for="username">Nazwa użytkownika:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password">
+            <div id="lower">
+              <input type="checkbox"><label class="check" for="checkbox">Zapamiętaj mnie!</label>
+              <input type="submit" value="Login">
+            </div>
+          </form>
+        </div>
       </div>
       <div class="clear" />
       </div>

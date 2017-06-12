@@ -114,3 +114,8 @@ ul.breadcrumb li+li:before {
     color: black;
     content: "/\00a0";
 }
+
+.opisykwiatow {
+    padding: 5px 5px;
+    font-size: 15px; 
+}
