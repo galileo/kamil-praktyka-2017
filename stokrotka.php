@@ -1,7 +1,7 @@
 <?php
   include "pages.php";
   
-  $page = $pages['galeria'];
+  $page = $pages['galerry'];
   
   ?>
 <!DOCTYPE HTML>

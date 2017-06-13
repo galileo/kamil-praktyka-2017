@@ -1,8 +1,6 @@
 <?php
-  include "pages.php";
-  
-  $page = $pages['galeria'];
-  
+  include "menu.php";
+  $page = $pages['aboutUs'];
   ?>
 <!DOCTYPE HTML>
 <html>
@@ -20,20 +18,13 @@
     <div class="gora">
       <ul class="breadcrumb">
         <li><a href="index.php">Home</a></li>
-        <li><a href="galeria.php">Galerry</a></li>
-        <li><href="chaber.php">Chaber</li>
+        <li><a href="<?php echo $pages['aboutUs']->getUrl(); ?>">AboutUs</a></li>
       </ul>
     </div>
     <div class="content">
     <div class="lewa">
       <div class="menu">
-        <ul>
-          <li><a href="index.php">Strona główna</a></li>
-          <li><a href="AboutUs.php">O nas</a></li>
-          <li><a href="galeria.php">Galeria Kwiatów</a></li>
-          <li><a href="login.php">Zaloguj się</a></li>
-          <li><a href="FormularzKontaktowy.php">Kontakt</a></li>
-        </ul>
+        <?php echo $menu ?>
       </div>
     </div>
     <div class="prawa">

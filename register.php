@@ -4,7 +4,7 @@
   include_once "funkcje.php";
   
   $page = $pages['index'];
-
+  $breadcrumbElement = url($page);
   
   ?>
 <!DOCTYPE HTML>
@@ -22,7 +22,7 @@
     </div>
     <div class="gora">
       <ul class="breadcrumb">
-        <li><?php echo url($page) ?></li>
+        <li><?php echo $breadcrumbElement ?></li>
       </ul>
     </div>
     <div class="content">
@@ -34,6 +34,16 @@
       <div class="prawa">
         <h1><?php echo getTitle($page) ?></h1>
         <p><?php echo getContent($page) ?></p>
+      <div id="panel">
+          <form>
+            <label for="username">Nazwa użytkownika:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Rejestruj">
+      </div>
       </div>
       <div class="clear" />
       </div>

@@ -1,7 +1,7 @@
 <?php
   include "pages.php";
   
-  $page = $pages['formularz'];
+  $page = $pages['form'];
   
   ?>
 <!DOCTYPE HTML>
