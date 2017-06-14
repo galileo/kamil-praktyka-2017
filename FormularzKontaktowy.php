@@ -1,13 +1,15 @@
 <?php
-  include "pages.php";
-  
+  include_once "menu.php";
+  include_once "pages.php";
+  include_once "funkcje.php";
+
   $page = $pages['form'];
-  
+
   ?>
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>praktyka1</title>
+    <title><?php echo $page->getTitle() ?></title>
     <meta charset="utf-8">
     <meta name="keywords" content="slowa kluczowe" />
     <meta name="description" content="opis stroneczki" />
@@ -15,26 +17,21 @@
   </head>
   <body>
     <div class="glowa">
-      <h1>Strona Kwiatowa</h1>
+      <h1>O Nas</h1>
     </div>
     <div class="gora">
       <ul class="breadcrumb">
-        <li><a href="index.php">Home</a></li>
-        <li><href="FormularzKontaktowy.php">ContactUs</a></li>
+      <li><?php echo url($pages['index']) ?></li>
+      <li><?php echo url($page) ?></li>
       </ul>
     </div>
     <div class="content">
-      <div class="lewa">
-        <div class="menu">
-          <ul>
-          <li><a href="index.php">Strona główna</a></li>
-          <li><a href="AboutUs.php">O nas</a></li>
-          <li><a href="galeria.php">Galeria Kwiatów</a></li>
-          <li><a href="login.php">Zaloguj się</a></li>
-          <li><a href="FormularzKontaktowy.php">Kontakt</a></li>
-        </div>
+    <div class="lewa">
+      <div class="menu">
+        <?php echo menu1($pages) ?>
       </div>
-      <div class="prawa">
+    </div>
+    <div class="prawa">
         <h1><?php echo $page->getTitle() ?></h1>
         <p><?php echo $page->getContent() ?></p>
         <form id="contact-form" action="contact" method="post">

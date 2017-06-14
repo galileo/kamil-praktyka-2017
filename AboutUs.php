@@ -1,11 +1,15 @@
 <?php
-  include "menu.php";
+  include_once "menu.php";
+  include_once "pages.php";
+  include_once "funkcje.php";
+
   $page = $pages['aboutUs'];
+
   ?>
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>praktyka1</title>
+    <title><?php echo $page->getTitle() ?></title>
     <meta charset="utf-8">
     <meta name="keywords" content="slowa kluczowe" />
     <meta name="description" content="opis stroneczki" />
@@ -13,18 +17,18 @@
   </head>
   <body>
     <div class="glowa">
-      <h1>nagłówek</h1>
+      <h1>O Nas</h1>
     </div>
     <div class="gora">
       <ul class="breadcrumb">
-        <li><a href="index.php">Home</a></li>
-        <li><a href="<?php echo $pages['aboutUs']->getUrl(); ?>">AboutUs</a></li>
+      <li><?php echo url($pages['index']) ?></li>
+      <li><?php echo url($page) ?></li>
       </ul>
     </div>
     <div class="content">
     <div class="lewa">
       <div class="menu">
-        <?php echo $menu ?>
+        <?php echo menu1($pages) ?>
       </div>
     </div>
     <div class="prawa">

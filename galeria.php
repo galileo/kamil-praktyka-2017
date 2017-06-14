@@ -1,13 +1,15 @@
 <?php
-  include "pages.php";
+  include_once "pages.php";
+  include_once "menu.php";
+  include_once "funkcje.php";
   
-  $page = $pages['formularz'];
+  $page = $pages['galerry'];
   
   ?>
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>praktyka1</title>
+    <title><?php echo $page->getTitle() ?></title>
     <meta charset="utf-8">
     <meta name="keywords" content="slowa kluczowe" />
     <meta name="description" content="opis stroneczki" />
@@ -15,26 +17,24 @@
   </head>
   <body>
     <div class="glowa">
-      <h1>Strona Kwiatowa</h1>
+      <h1>Galeria</h1>
     </div>
     <div class="gora">
       <ul class="breadcrumb">
-        <li><a href="index.php">Home</a></li>
-        <li><href="galeria.php">Galerry</a></li>
+        <li><?php echo url($pages['index']) ?></li>
+        <li><?php echo url($page) ?></li>
       </ul>
     </div>
     <div class="content">
       <div class="lewa">
         <div class="menu">
           <ul>
-          <li><a href="index.php">Strona główna</a></li>
-          <li><a href="AboutUs.php">O nas</a></li>
-          <li><a href="galeria.php">Galeria Kwiatów</a></li>
-          <li><a href="login.php">Zaloguj się</a></li>
-          <li><a href="FormularzKontaktowy.php">Kontakt</a></li>
+          <?php echo menu1($pages) ?>
         </div>
       </div>
       <div class="prawa">
+        <h1><?php echo getTitle($page) ?></h1>
+        <p><?php echo getContent($page) ?></p>
         <a href="Roza.php"><img src="img\Roza.jpg" alt="Róża" height="300" width="300" /></a>
         <a href="chaber.php"><img src="img\chaber.jpg" alt="chaber" height="300" width="300" /></a>
         <a href="mak.php"><img src="img\mak.jpg" alt="mak" height="300" width="300" /></a>

@@ -8,5 +8,5 @@ $pages = [
   'galerry' => new Page('Galerry', ' ', 'galeria.php'),
   'login' => new Page('Log In', 'Nie podawaj nikomu swojego hasła ', 'login.php'),
   'form' => new Page('Contact Us', ' ', 'FormularzKontaktowy.php'),
-  'register' => new Page('Register', ' ', 'Register.php')
+  'register' => new Page('Register', ' ', 'Register.php'),
 ];
