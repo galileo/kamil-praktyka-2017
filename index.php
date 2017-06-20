@@ -12,9 +12,16 @@
     <meta charset="utf-8">
     <meta name="keywords" content="slowa kluczowe" />
     <meta name="description" content="opis stroneczki" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+  <div class="container">
     <div class="glowa">
       <h1>Strona Kwiatowa</h1>
     </div>
@@ -24,12 +31,12 @@
       </ul>
     </div>
     <div class="content">
-      <div class="lewa">
+      <div class="col-sm-3 lewa">
         <div class="menu">
         <?php echo menu1($pages) ?>
       </div>
       </div>
-      <div class="prawa">
+      <div class="col-sm-9 prawa">
 
         <h1><?php echo getTitle($page) ?></h1>
         <p><?php echo getContent($page) ?></p>
@@ -40,5 +47,6 @@
     <div class="stopeczka">
       Copyright by <a href="mailto:gacko2k9@interia.pl">gacko2k9</a> 2017
     </div>
+  </div>
   </body>
 </html>

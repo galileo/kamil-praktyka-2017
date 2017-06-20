@@ -41,7 +41,7 @@ $pages = [
             <input type="submit" value="Rejestruj">
       </div>', 'Register.php'),
   'gallery_mak' => new Page('Mak', '<div class="galeria">
-      <img src="img\mak.jpg" alt="mak" height="500" width="500" />
+      <img src="img\mak.jpg" alt="mak" height="300" width="300" />
       <div class="opisykwiatow">
         rodzaj roślin z rodziny makowatych (Papaveraceae Juss.), roślina oleista, rodzimy dla Eurazji, Afryki i Ameryki Północnej.
         Zalicza się do niego w zależności od ujęcia od ok. 70 do ok. 100 gatunków[3][4]. Niemal wszystkie gatunki występują na<

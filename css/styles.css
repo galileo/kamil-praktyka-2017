@@ -2,12 +2,6 @@ html {
     font-family: sans-serif;
 }
 
-body {
-    position: relative;
-    width: 1024px;
-    margin: 0;
-}
-
 .page {
     background: #F1F1F1;
 }
@@ -33,10 +27,6 @@ h2 {
     text-align: justify;
 }
 
-.content {
-    padding: 10px;
-}
-
 .content .menu ul {
     margin: 0;
     padding: 0;
@@ -60,36 +50,15 @@ h2 {
     color: white;
 }
 
-.lewa {
-    text-align: center;
-    width: 200px;
-    float: left;
-    margin: 0px 5px 0px 5px;
-    padding: 6px 5px 6px 5px;
-}
-
 .menu {
     background-color: #cccccc;
     text-align: center;
     font-size: 20px;
 }
 
-.prawa {
-    text-align: center;
-    width: 750px;
-    float: right;
-    margin: 0px 5px 0px 5px;
-    padding: 6px 5px 6px 5px;
-}
-
-.clear {
-    clear: both;
-}
-
 .stopeczka {
     text-align: center;
     background-color: #f9f9f9;
-    clear: both;
     margin: 0px 5px 0px 5px;
     padding: 20px 0px 10px;
 }
