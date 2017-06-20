@@ -51,7 +51,7 @@ $pages = [
       </div>
       <div class="clear" />
       </div>
-    </div>', '"<img src="img\mak.jpg" alt="Mak" height="300" width="300" />"'),
+    </div>', 'img\mak.jpg'),
       'gallery_roza' => new Page('Roza', '<div class="galeria">
       <img src="img\roza.jpg" alt="Roza" height="500" width="500" />
       <div class="opisykwiatow">
@@ -61,7 +61,7 @@ $pages = [
       </div>
       <div class="clear" />
       </div>
-    </div>', '"<img src="img\Roza.jpg" alt="Róża" height="300" width="300" />"'),
+    </div>', 'img\Roza.jpg'),
       'gallery_chaber' => new Page('Chaber', '<div class="galeria">
       <img src="img\chaber.jpg" alt="chaber" height="500" width="500" />
       <div class="opisykwiatow">
@@ -72,7 +72,7 @@ $pages = [
       </div>
       <div class="clear" />
       </div>
-    </div>', '"<img src="img\chaber.jpg" alt="Chaber" height="300" width="300" />"'),
+    </div>', 'img\chaber.jpg'),
       'gallery_tulipan' => new Page('Tulipan', '<div class="galeria">
       <img src="img\tulipan.jpg" alt="tulipan" height="500" width="500" />
       <div class="opisykwiatow">
@@ -83,7 +83,7 @@ $pages = [
       </div>
       <div class="clear" />
       </div>
-    </div>', '"<img src="img\tulipan.jpg" alt="Tulipan" height="300" width="300" />"'),
+    </div>', 'img\tulipan.jpg'),
       'gallery_stokrotka' => new Page('Stokrotka', '<div class="galeria">
       <img src="img\stokrotka.jpg" alt="stokrotka" height="500" width="500" />
       <div class="opisykwiatow">
@@ -92,7 +92,7 @@ $pages = [
       </div>
       <div class="clear" />
       </div>
-    </div>', '"<img src="img\stokrotka.jpg" alt="Stokrotka" height="300" width="300" />"'),
+    </div>', 'img\stokrotka.jpg'),
       'gallery_irys' => new Page('Irys', '<div class="galeria">
       <img src="img\irys.jpg" alt="irys" height="500" width="500" />
       <div class="opisykwiatow">
@@ -101,7 +101,7 @@ $pages = [
       </div>
       <div class="clear" />
       </div>
-    </div>', '"<img src="img\irys.jpg" alt="Irys" height="300" width="300" />"'),
+    </div>', 'img\irys.jpg'),
 
 ];
 

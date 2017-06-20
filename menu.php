@@ -55,7 +55,7 @@ foreach($pages as $pageName => $page) {
     if (preg_match('/'.$splitter.'/', $pageName)) {
         continue;
     }
-    $body .= urlMenu($pageName, $page->getUrl());
+    $body .= urlMenu($pageName, '<img src="'. $page->getUrl() .'" alt="'.$page->getTitle().'" height="300" width="300" />');
 }
 
     $bottom = '';
