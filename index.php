@@ -20,7 +20,7 @@
     </div>
     <div class="gora">
       <ul class="breadcrumb">
-        <li><?php echo urlMenu($pageName, $page) ?></li>
+        <li><?php echo urlMenu($pageName, $page->getTitle()) ?></li>
       </ul>
     </div>
     <div class="content">

@@ -4,11 +4,13 @@ class Page
     private $title;
     private $content;
     private $tablica;
+    private $url;
     
-    function __construct($title, $content)
+    function __construct($title, $content, $url)
     {
         $this->title   = $title;
         $this->content = $content;
+        $this->url = $url;
     }
     public function getTitle()
     {
@@ -25,5 +27,13 @@ class Page
     public function setContent($value)
     {
         $this->content = $value;
+    }
+    public function getUrl()
+    {
+        return $this->url;
+    }
+    public function setUrl()
+    {
+        $this->url = $url;
     }
 }
