@@ -2,8 +2,16 @@
   include_once('pages.php');
   include_once "menu.php";
   include_once "funkcje.php";
-  
-  $page = $pages[$_GET['page']];
+
+  if (isset($_GET['page']) && $_GET['page'] !== null){
+    $page = $pages[$_GET['page']];
+  } else {
+    $page = $pages['index'];
+  }
+
+  if ($page == null) {
+    echo "Nie ma takiej strony";
+  }
 ?>
 <!DOCTYPE HTML>
 <html>
