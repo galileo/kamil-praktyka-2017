@@ -3,10 +3,8 @@
   include_once "menu.php";
   include_once "funkcje.php";
   
-  $page = $pages['index'];
-
-  
-  ?>
+  $page = $pages[$_GET['page']];
+?>
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -32,6 +30,7 @@
       </div>
       </div>
       <div class="prawa">
+
         <h1><?php echo getTitle($page) ?></h1>
         <p><?php echo getContent($page) ?></p>
       </div>

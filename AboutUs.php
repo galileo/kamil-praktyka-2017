@@ -4,8 +4,7 @@
   include_once "funkcje.php";
 
   $page = $pages['aboutUs'];
-
-  ?>
+?>
 <!DOCTYPE HTML>
 <html>
   <head>

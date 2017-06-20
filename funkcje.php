@@ -1,4 +1,12 @@
 <?php
+
+function var_die($variable)
+{
+  echo '<pre>';
+  var_dump($variable);
+  die();
+}
+
 function getTitle($page){
   return $page->getTitle();
 }

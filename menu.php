@@ -18,6 +18,10 @@ function menu1($pages){
 
     $head = '<div class="menu">
         <ul>';
+        $head .= '<li><a href="?page=index">Storna głowna</a></li>';
+        $head .= '<li><a href="?page=galerry">Galeria</a></li>';
+        $head .= '<li><a href="?page=register">Register</a></li>';
+          
 foreach($pages as $key => $page) {
     $body .= menuRow($page);
 }
