@@ -13,17 +13,16 @@ function menu($pages)
     
 }
 
-function menu1($pages){
+function menu1($pages, $splitter = '_'){
     $body = '';
 
     $head = '<div class="menu">
-        <ul>';
-        $head .= '<li><a href="?page=index">Storna głowna</a></li>';
-        $head .= '<li><a href="?page=galerry">Galeria</a></li>';
-        $head .= '<li><a href="?page=register">Register</a></li>';
-          
-foreach($pages as $key => $page) {
-    $body .= menuRow($page);
+        <ul>';          
+foreach($pages as $pageName => $page) {
+    if (preg_match('/'.$splitter.'/', $pageName)) {
+        continue;
+    }
+    $body .= menuRow($pageName, $page);
 }
 
     $bottom = '
@@ -33,7 +32,12 @@ foreach($pages as $key => $page) {
     return $head . $body . $bottom;
 }
 
-function menuRow($page) {
-    return '<li>' . url($page) . '</li>';
+function menuRow($pageName, $page) {
+    return '<li>' . urlMenu($pageName, $page) . '</li>';
 }
+
+function urlMenu($pageName, $page) {
+  return '<a href="index.php?page=' . $pageName . '">' . $page->getTitle() . '</a>'; 
+}
+
 

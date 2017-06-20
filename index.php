@@ -3,15 +3,7 @@
   include_once "menu.php";
   include_once "funkcje.php";
 
-  if (isset($_GET['page']) && $_GET['page'] !== null){
-    $page = $pages[$_GET['page']];
-  } else {
-    $page = $pages['index'];
-  }
-
-  if ($page == null) {
-    echo "Nie ma takiej strony";
-  }
+  list($pageName, $page) = getPageFromPages($_GET, $pages);
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -28,7 +20,7 @@
     </div>
     <div class="gora">
       <ul class="breadcrumb">
-        <li><?php echo url($page) ?></li>
+        <li><?php echo urlMenu($pageName, $page) ?></li>
       </ul>
     </div>
     <div class="content">

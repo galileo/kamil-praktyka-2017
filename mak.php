@@ -39,18 +39,6 @@
     <div class="prawa">
     <h1><?php echo $page->getTitle() ?></h1>
     <p><?php echo $page->getContent() ?></p>
-    <div class="galeria">
-      <img src="img\mak.jpg" alt="mak" height="500" width="500" />
-      <div class="opisykwiatow">
-        rodzaj roślin z rodziny makowatych (Papaveraceae Juss.), roślina oleista, rodzimy dla Eurazji, Afryki i Ameryki Północnej.
-        Zalicza się do niego w zależności od ujęcia od ok. 70 do ok. 100 gatunków[3][4]. Niemal wszystkie gatunki występują na<
-        półkuli północnej, w Australii i Afryce południowej rośnie dziko tylko jeden gatunek – Papaver acuelatum. Wiele gatunków<
-        uprawianych jest jako rośliny ozdobne. Mak lekarski (Papaver somniferum) jest surowcem, z którego wytwarzana jest heroina,
-        morfina i opium
-      </div>
-      <div class="clear" />
-      </div>
-    </div>
     <div class="stopeczka">
       Copyright by <a href="mailto:gacko2k9@interia.pl">gacko2k9</a> 2017
     </div>

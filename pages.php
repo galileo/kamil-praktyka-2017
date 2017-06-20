@@ -1,17 +1,12 @@
 <?php
 include_once "page.php";
+include_once('menu.php');
 $pages = [
+  'nowa' => new Page('nowa', 'nowa', 'nowa'),
   'index' => new Page('Strona', 'Strona w budowie...', 'index.php'),
   'aboutUs' => new Page('AboutUs', 'Wraz z upływem czasu Strona-Kwiatowa.pl nabierała doświadczenia w produkcji,
    innowacyjności, tworząc nowy design własnych produktów tak, aby nasi klienci otrzymując do rąk produkt
   wyróżniający nas na rynku otrzymał także najwyższej jakości usługę.', 'aboutUS.php'),
-  'galerry' => new Page('Galerry', '<a href="Roza.php"><img src="img\Roza.jpg" alt="Róża" height="300" width="300" /></a>
-        <a href="chaber.php"><img src="img\chaber.jpg" alt="chaber" height="300" width="300" /></a>
-        <a href="mak.php"><img src="img\mak.jpg" alt="mak" height="300" width="300" /></a>
-        <a href="stokrotka.php"><img src="img\stokrotka.jpg" alt="stokrotka" height="300" width="300" /></a>
-        <a href="irys.php"><img src="img\irys.jpg" alt="irys" height="300" width="300" /></a>
-        <a href="tulipan.php"><img src="img\tulipan.jpg" alt="tulipan" height="300" width="300" /></a>',
-        'galeria.php'),
   'login' => new Page('Log In', 'Nie podawaj nikomu swojego hasła
           <div id="panel">
             <form>
@@ -46,4 +41,62 @@ $pages = [
             <input type="email" id="email" name="email">
             <input type="submit" value="Rejestruj">
       </div>', 'Register.php'),
+  'gallery_mak' => new Page('Mak', '<div class="galeria">
+      <img src="img\mak.jpg" alt="mak" height="500" width="500" />
+      <div class="opisykwiatow">
+        rodzaj roślin z rodziny makowatych (Papaveraceae Juss.), roślina oleista, rodzimy dla Eurazji, Afryki i Ameryki Północnej.
+        Zalicza się do niego w zależności od ujęcia od ok. 70 do ok. 100 gatunków[3][4]. Niemal wszystkie gatunki występują na<
+        półkuli północnej, w Australii i Afryce południowej rośnie dziko tylko jeden gatunek – Papaver acuelatum. Wiele gatunków<
+        uprawianych jest jako rośliny ozdobne. Mak lekarski (Papaver somniferum) jest surowcem, z którego wytwarzana jest heroina,
+        morfina i opium
+      </div>
+      <div class="clear" />
+      </div>
+    </div>', 'nowa'),
+
 ];
+
+function getSubItems($type, $pages) {
+      $subitems = [];
+      foreach ($pages as $pageName => $page) {
+            if (!preg_match('/_/', $pageName)) {
+                  continue;
+            }
+            $elements = explode('_', $pageName);
+
+            if ($type == $elements[0]) {
+                  $subitems[$pageName] = $page;
+            }
+      } 
+
+      return $subitems;
+}
+
+$kfiotki = getSubItems('gallery', $pages);
+$pages['gallery'] = new Page('Galerry', menu1($kfiotki, '-'), 'galeria.php');
+  
+function page_not_found() {
+    echo require('error.php');
+    die();
+  }
+
+function getPageFromPages($urlParams, $pages) {
+  $isPageSpecfied = isset($urlParams['page']) && $urlParams['page'] !== null;
+  $pageName = 'index';
+
+  if ($isPageSpecfied) {
+    $pageName = $urlParams['page'];
+  } 
+
+  $existingPage = isset($pages[$pageName]);
+
+  if ($existingPage) {
+    $page = $pages[$pageName];
+  }
+
+  if (!$page) {
+    $page = new Page('Error', '404', '');
+  }
+  
+  return [$pageName, $page];
+}
