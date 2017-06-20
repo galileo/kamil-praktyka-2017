@@ -8,7 +8,7 @@ $pages = [
   wyróżniający nas na rynku otrzymał także najwyższej jakości usługę.', 'aboutUS.php'),
   'login' => new Page('Log In', 'Nie podawaj nikomu swojego hasła
           <div id="panel">
-            <form>
+            <form method="post">
               <label for="username">Nazwa użytkownika:</label>
               <input type="text" id="username" name="username">
               <label for="password">Hasło:</label>

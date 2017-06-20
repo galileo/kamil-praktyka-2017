@@ -1,7 +1,38 @@
 <?php
+  session_start();
+
   include_once('pages.php');
   include_once "menu.php";
   include_once "funkcje.php";
+
+  if ($_GET['action'] == 'wyloguj') {
+    unset($_SESSION['user']);
+  }
+
+  $users = [
+    'kamil' => [
+      'displayName' => 'Kamil Ronewicz',
+      'password' => 'aaa'
+    ],
+    'gacko2k9' => [
+      'displayName' => 'Kamil Gaca',
+      'password' => 'aaa'
+    ],
+  ];
+
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (!$users[$_POST['username']]) {
+      die('uzytkownik nie istniej');
+    }
+
+    $loginUser = $users[$_POST['username']];
+
+    if ($_POST['password'] !== $loginUser['password']) {
+        die('haslo bledne');
+    }
+
+    $_SESSION['user'] = $loginUser;
+  }
 
   list($pageName, $page) = getPageFromPages($_GET, $pages);
 ?>
@@ -29,6 +60,10 @@
       <ul class="breadcrumb">
         <li><?php echo urlMenu($pageName, $page->getTitle()) ?></li>
       </ul>
+    </div>
+    <div>
+      <?php echo $_SESSION['user'] ? 'Witaj: ' . $_SESSION['user']['displayName'] : 'zalogu sie'; ?>
+      <?php echo $_SESSION['user'] ? '<a href="?action=wyloguj">Wyloguj</a>' : '<a href="?page=login">Zaloguj</a>' ?>
     </div>
     <div class="content">
       <div class="col-sm-3 lewa">
