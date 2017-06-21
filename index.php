@@ -56,14 +56,14 @@
     <div class="glowa">
       <h1>Strona Kwiatowa</h1>
     </div>
+    <div class="breadcrumb">
+      <?php echo $_SESSION['user'] ? 'Witaj: ' . $_SESSION['user']['displayName'] : 'zalogu sie'; ?>
+      <?php echo $_SESSION['user'] ? '<a href="?action=wyloguj">Wyloguj</a>' : '<a href="?page=login">Zaloguj</a>' ?>
+    </div>
     <div class="gora">
       <ul class="breadcrumb">
         <li><?php echo urlMenu($pageName, $page->getTitle()) ?></li>
       </ul>
-    </div>
-    <div>
-      <?php echo $_SESSION['user'] ? 'Witaj: ' . $_SESSION['user']['displayName'] : 'zalogu sie'; ?>
-      <?php echo $_SESSION['user'] ? '<a href="?action=wyloguj">Wyloguj</a>' : '<a href="?page=login">Zaloguj</a>' ?>
     </div>
     <div class="content">
       <div class="col-sm-3 lewa">
@@ -79,9 +79,9 @@
       <div class="clear" />
       </div>
     </div>
-    <div class="stopeczka">
-      Copyright by <a href="mailto:gacko2k9@interia.pl">gacko2k9</a> 2017
-    </div>
+  </div>
+  <div class="stopeczka">
+    Copyright by <a href="mailto:gacko2k9@interia.pl">gacko2k9</a> 2017
   </div>
   </body>
 </html>
