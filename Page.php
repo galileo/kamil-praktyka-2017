@@ -3,8 +3,8 @@ class Page
 {
     private $title;
     private $content;
-    private $url;
     private $tablica;
+    private $url;
     
     function __construct($title, $content, $url)
     {
@@ -32,8 +32,8 @@ class Page
     {
         return $this->url;
     }
-    public function setUrl($Urlvalue)
+    public function setUrl()
     {
-        $this->url = $Urlvalue;
+        $this->url = $url;
     }
 }

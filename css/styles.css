@@ -2,12 +2,6 @@ html {
     font-family: sans-serif;
 }
 
-body {
-    position: relative;
-    width: 1024px;
-    margin: 0;
-}
-
 .page {
     background: #F1F1F1;
 }
@@ -33,10 +27,6 @@ h2 {
     text-align: justify;
 }
 
-.content {
-    padding: 10px;
-}
-
 .content .menu ul {
     margin: 0;
     padding: 0;
@@ -60,36 +50,15 @@ h2 {
     color: white;
 }
 
-.lewa {
-    text-align: center;
-    width: 200px;
-    float: left;
-    margin: 0px 5px 0px 5px;
-    padding: 6px 5px 6px 5px;
-}
-
 .menu {
     background-color: #cccccc;
     text-align: center;
     font-size: 20px;
 }
 
-.prawa {
-    text-align: center;
-    width: 750px;
-    float: right;
-    margin: 0px 5px 0px 5px;
-    padding: 6px 5px 6px 5px;
-}
-
-.clear {
-    clear: both;
-}
-
 .stopeczka {
     text-align: center;
     background-color: #f9f9f9;
-    clear: both;
     margin: 0px 5px 0px 5px;
     padding: 20px 0px 10px;
 }
@@ -113,4 +82,46 @@ ul.breadcrumb li+li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";
+}
+
+.opisykwiatow {
+    padding: 5px 5px;
+    font-size: 15px; 
+}
+
+label {
+display: block;
+padding: 10px 20px;
+color: #696969;
+font-size: 16px;
+text-shadow: 0 0 1px silver;
+}
+
+#username, #password, #email {
+display: block;
+width: 360px; 
+margin: 0 auto;
+padding: 10px 5px;
+border: 1px solid silver;
+outline: 5px solid #ebebeb;
+font-size: 22px;
+}
+#username:focus, #password:focus #email:focus {
+outline: 5px solid #e5f2f8;
+}
+
+#panel {
+width: 400px; 
+margin: 0 auto; 
+padding: 15px 0 0;
+background: #fff;
+border: 1px solid silver;
+font: 16px calibri;
+letter-spacing: -1px;
+-webkit-box-shadow: 0 0 2px silver; 
+-moz-box-shadow: 0 0 2px silver; 
+box-shadow: 0 0 2px silver;
+}
+form {
+margin: 0;
 }
